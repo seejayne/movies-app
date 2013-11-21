@@ -42,6 +42,8 @@ gem "twitter-bootstrap-rails"
 gem 'rails_12factor', :group => :production
 gem 'pg', :group => :production
 
+gem "rest-client", "~> 1.6.7"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

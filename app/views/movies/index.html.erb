@@ -18,9 +18,11 @@
 <% @movies.each do |movie| %>
 
   <li class="span3">
-    <div class="thumbnail" style="height:150px; padding:30px">
+    <div class="thumbnail" style="height:450px; padding:30px">
+    	<img src="<%= movie.poster %>">
       <h4><a href="<%= movie_path(movie) %>"><%= movie.title %> (<%= movie.year_released %>)</a></h4>
 		<%= movie.description %>
+
     </div>
   </li>
 <% end %>
