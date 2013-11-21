@@ -1,0 +1,17 @@
+<%= form_for @movie, :html => { :class => "class-for-your-text-form" } do |f| %>
+	<div>
+		<%= f.label :title, "Movie Title", :class => "class-for-your-label" %>
+		<%= f.text_field :title, :class => "class-for-your-text-field" %>
+	</div>
+	<div>
+		<%= f.label :description, "Description" %>
+		<%= f.text_area :description, :size => "30x10" %>
+
+	</div>
+	<div>
+		<%= f.label :year_released, "Year Released" %>
+		<%= f.text_field :year_released %>
+	</div>
+
+	<%= f.submit "Submit", :class => "btn" %>
+<% end %>

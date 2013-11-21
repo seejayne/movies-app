@@ -1,0 +1,10 @@
+<div style="margin:50px">
+	<h3><%= @movie.title %> ( <%= @movie.year_released %> )</h3>
+	<p><%= @movie.description %></p>
+	<div>
+		<a href="<%= edit_movie_path( @movie ) %>" class="btn">Edit Movie</a> 
+	</div>
+	<div>
+		<%= button_to "Delete Movie", movie_path(@movie), :method => :delete, :class => "btn"  %>
+	</div>
+</div>
